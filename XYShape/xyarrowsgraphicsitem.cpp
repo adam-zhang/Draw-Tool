@@ -1,4 +1,5 @@
 ﻿#include "xyarrowsgraphicsitem.h"
+#include <cmath>
 
 XYArrowsGraphicsItem::XYArrowsGraphicsItem(const QPointF &start,
                                            const QPointF &end,

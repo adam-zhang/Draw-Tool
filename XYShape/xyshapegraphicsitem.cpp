@@ -1,4 +1,5 @@
 ﻿#include "xyshapegraphicsitem.h"
+#include <cmath>
 
 XYShapeGraphicsItem::XYShapeGraphicsItem(QGraphicsItem *parent)
     : QAbstractGraphicsShapeItem(parent)
