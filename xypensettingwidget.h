@@ -43,7 +43,7 @@ class XYPenSettingWidget : public XYMovableWidget
 {
     Q_OBJECT
 public:
-    static XYPenSettingWidget *getInstance();
+    static XYPenSettingWidget& instance();
     explicit XYPenSettingWidget(QWidget *parent = 0);
     ~XYPenSettingWidget();
 

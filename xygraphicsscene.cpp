@@ -438,20 +438,23 @@ bool XYGraphicsScene::paintPolygon(QEvent *event)
 
 QPen XYGraphicsScene::getCurPen()
 {
-    XYPenSettingWidget *penSetting = XYPenSettingWidget::getInstance();
-    return penSetting->getMoPen();
+	return XYPenSettingWidget::instance().getMoPen();
+    //auto penSetting = XYPenSettingWidget::getInstance();
+    //return penSetting.getMoPen();
 }
 
 QFont XYGraphicsScene::getCurFont()
 {
-    XYPenSettingWidget *penSetting = XYPenSettingWidget::getInstance();
-    return penSetting->getMoFont();
+	return XYPenSettingWidget::instance().getMoFont();
+    //XYPenSettingWidget *penSetting = XYPenSettingWidget::getInstance();
+    //return penSetting->getMoFont();
 }
 
 QBrush XYGraphicsScene::getCurBrush()
 {
-    XYPenSettingWidget *penSetting = XYPenSettingWidget::getInstance();
-    return penSetting->getMoBrush();
+	return XYPenSettingWidget::instance().getMoBrush();
+    //XYPenSettingWidget *penSetting = XYPenSettingWidget::getInstance();
+    //return penSetting->getMoBrush();
 }
 
 XYMovableGraphicsItem *XYGraphicsScene::getCurDrawshapeItem()
